@@ -1,0 +1,133 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+}
+
+h1, h2 {
+    color: #0056b3; /* A shade of blue for NSU branding */
+    font-weight: 600;
+}
+
+.lead {
+    color: #6c757d;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff; /* Primary blue for headers */
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #343a40;
+}
+
+.form-control, .form-select {
+    border-radius: 0.25rem;
+    border-color: #ced4da;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.semester-card {
+    border-left: 5px solid #007bff;
+}
+
+.semester-card .card-header {
+    background-color: #e9ecef;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.semester-card .card-header .remove-semester-btn {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.course-row {
+    background-color: #f1f5f9;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-row:last-child {
+    margin-bottom: 0;
+}
+
+.results-card {
+    background-color: #d4edda; /* Light green for results */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb;
+}
+
+#final-cgpa {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #28a745; /* Green for the main CGPA */
+}
+
+#total-credits-completed {
+    color: #155724;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .col-md-5, .col-md-2, .col-md-3, .col-md-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .course-row .col-md-2.d-flex {
+        justify-content: flex-start !important;
+    }
+}
